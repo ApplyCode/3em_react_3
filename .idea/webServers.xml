@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="28e8c089-ac42-4ac2-9db1-dbabd8540f41" name="3em_react">
+        <fileTransfer accessType="SFTP" host="161.97.128.220" port="2222" sshConfigId="d1455df8-f298-4fee-ae50-28213b2718b4" sshConfig="root@161.97.128.220:2222 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" isUseRsync="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
