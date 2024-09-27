@@ -13,7 +13,7 @@ export async function getClienti(pageIndex, pageSize, filters, paginate=true) {
     }),
   })
 
-  return await response.json();
+
 }
 
 export async function getCommittenti(pageIndex, pageSize, filters, paginate=true) {
