@@ -12,7 +12,12 @@ export async function getClienti(pageIndex, pageSize, filters, paginate=true) {
       'Authorization': 'Bearer '+localStorage.getItem('settings')
     }),
   })
-
+  const response = await fetch(url, {
+    method: 'GET',
+    headers: new Headers({
+      'Authorization': 'Bearer '+localStorage.getItem('settings')
+    }),
+  })
   return await response.json();
 }
 
