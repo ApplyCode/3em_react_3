@@ -27,8 +27,6 @@ export async function getCommittenti(pageIndex, pageSize, filters, paginate=true
   if (filters.length > 0) {
     url += `&filters=${encodeURIComponent(JSON.stringify(filters))}`
   }
-
-
   return await response.json();
 }
 
