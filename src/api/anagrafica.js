@@ -3,9 +3,7 @@ import config from '../config';
 export async function getClienti(pageIndex, pageSize, filters, paginate=true) {
   const page = pageIndex + 1
   let url = config.api_url+`/anagrafica/clienti-finali?paginate=${paginate}&page=${encodeURIComponent(page)}&pageSize=${encodeURIComponent(pageSize)}`
-  if (filters.length > 0) {
-    url += `&filters=${encodeURIComponent(JSON.stringify(filters))}`
-  }
+
   const response = await fetch(url, {
     method: 'GET',
     headers: new Headers({
