@@ -3,7 +3,8 @@ import { lazy, Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
-
+// material-ui
+import { Container, Toolbar } from '@mui/material';
 
 // project import
 import ComponentLayout from './ComponentLayout';
