@@ -28,7 +28,7 @@ const loadLocaleData = (locale) => {
 
 const Locales = ({ children }) => {
 
-
+  const { i18n } = useConfig();
   const [messages, setMessages] = useState();
 
   useEffect(() => {
