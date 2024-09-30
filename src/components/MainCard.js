@@ -9,10 +9,7 @@ import Highlighter from './third-party/Highlighter';
 import { useTheme } from '@mui/material/styles';
 import { Card, CardContent, CardHeader, Divider, Typography } from '@mui/material';
 // header style
-const headerSX = {
-  p: 2.5,
-  '& .MuiCardHeader-action': { m: '0px auto', alignSelf: 'center' }
-};
+
 
 // ==============================|| CUSTOM - MAIN CARD ||============================== //
 
