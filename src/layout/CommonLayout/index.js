@@ -14,7 +14,8 @@ import { openComponentDrawer } from 'store/reducers/menu';
 import { styled } from '@mui/material/styles';
 import LinearProgress from '@mui/material/LinearProgress';
 
-
+const Header = lazy(() => import('./Header'));
+const FooterBlock = lazy(() => import('./FooterBlock'));
 
 // ==============================|| Loader ||============================== //
 
