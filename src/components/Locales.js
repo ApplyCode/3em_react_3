@@ -1,11 +1,4 @@
-import PropTypes from 'prop-types';
-import { useEffect, useState } from 'react';
 
-// third-party
-import { IntlProvider } from 'react-intl';
-
-// project import
-import useConfig from 'hooks/useConfig';
 
 // load locales files
 const loadLocaleData = (locale) => {
