@@ -3,7 +3,9 @@ import { forwardRef } from 'react';
 
 // material-ui
 
-
+import Highlighter from './third-party/Highlighter';
+import { useTheme } from '@mui/material/styles';
+import { Card, CardContent, CardHeader, Divider, Typography } from '@mui/material';
 // project import
 
 // header style
