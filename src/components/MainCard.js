@@ -109,7 +109,24 @@ const MainCard = forwardRef(
     );
   }
 );
-
-
+MainCard.propTypes = {
+  border: PropTypes.bool,
+  boxShadow: PropTypes.bool,
+  children: PropTypes.node,
+  subheader: PropTypes.oneOfType([PropTypes.node, PropTypes.string]),
+  content: PropTypes.bool,
+  contentClass: PropTypes.string,
+  contentSX: PropTypes.object,
+  darkTitle: PropTypes.bool,
+  divider: PropTypes.bool,
+  elevation: PropTypes.number,
+  secondary: PropTypes.oneOfType([PropTypes.node, PropTypes.string, PropTypes.object]),
+  shadow: PropTypes.string,
+  sx: PropTypes.object,
+  title: PropTypes.oneOfType([PropTypes.node, PropTypes.string, PropTypes.object]),
+  modal: PropTypes.bool,
+  codeHighlight: PropTypes.bool,
+  codeString: PropTypes.string
+};
 
 export default MainCard;
