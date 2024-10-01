@@ -32,7 +32,7 @@
     "@svgr/webpack": "^6.4.0",
     "amazon-cognito-identity-js": "^5.2.10",
     "apexcharts": "^3.36.0",
-    "axios": "^1.1.2",
+    "axios": "^1.7.7",
     "axios-mock-adapter": "^1.21.2",
     "buffer": "^6.0.3",
     "chance": "^1.1.8",
