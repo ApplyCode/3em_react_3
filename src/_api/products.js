@@ -34,8 +34,7 @@ services.onPost('/api/products/filter').reply((config) => {
       let searchMatches = true;
 
       if (filter.search) {
-        const properties = ['name', 'description', 'rating', 'salePrice', 'offerPrice', 'gender'];
-        let containsQuery = false;
+
 
         properties.forEach((property) => {
           if (product[property] && product[property].toString().toLowerCase().includes(filter.search.toString().toLowerCase())) {
