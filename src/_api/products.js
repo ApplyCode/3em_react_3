@@ -42,7 +42,9 @@ services.onPost('/api/products/filter').reply((config) => {
             containsQuery = true;
           }
         });
-
+        if (!containsQuery) {
+          searchMatches = false;
+        }
 
       }
 
