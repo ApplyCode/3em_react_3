@@ -31,11 +31,7 @@ export async function getCommittenti(pageIndex, pageSize, filters, paginate=true
 }
 
 export async function getResponsabiliAcquisti(pageIndex, pageSize, filters, paginate=true) {
-  const page = pageIndex + 1
-  let url = config.api_url+`/anagrafica/responsabili-acquisti?paginate=${paginate}&page=${encodeURIComponent(page)}&pageSize=${encodeURIComponent(pageSize)}`
-  if (filters.length > 0) {
-    url += `&filters=${encodeURIComponent(JSON.stringify(filters))}`
-  }
+
   const response = await fetch(url, {
     method: 'GET',
     headers: new Headers({
