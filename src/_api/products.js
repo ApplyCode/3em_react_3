@@ -22,7 +22,9 @@ services.onPost('/api/products/filter').reply((config) => {
       products.sort((a, b) => Number(b.popularity) - Number(a.popularity));
     }
 
-
+    if (filter.sort === 'discount') {
+      products.sort((a, b) => Number(b.discount) - Number(a.discount));
+    }
 
     if (filter.sort === 'new') {
       products.sort((a, b) => Number(b.new) - Number(a.new));
