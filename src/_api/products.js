@@ -4,7 +4,7 @@ import { products } from 'data/e-commerce';
 
 // ==============================|| MOCK SERVICES ||============================== //
 
-
+services.onGet('/api/products/list').reply(200, { products });
 
 services.onPost('/api/products/filter').reply((config) => {
   try {
