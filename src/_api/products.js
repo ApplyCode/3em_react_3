@@ -92,7 +92,7 @@ services.onPost('/api/product/related').reply((config) => {
   try {
     const { id } = JSON.parse(config.data);
 
-    const results = products.filter((product) => product.id !== Number(id));
+
 
     return [200, results];
   } catch (err) {
