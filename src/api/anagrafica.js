@@ -18,7 +18,7 @@ export async function getClienti(pageIndex, pageSize, filters, paginate=true) {
       'Authorization': 'Bearer '+localStorage.getItem('settings')
     }),
   })
-  return await response.json();
+
 }
 
 export async function getCommittenti(pageIndex, pageSize, filters, paginate=true) {
