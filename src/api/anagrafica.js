@@ -24,9 +24,7 @@ export async function getClienti(pageIndex, pageSize, filters, paginate=true) {
 export async function getCommittenti(pageIndex, pageSize, filters, paginate=true) {
   const page = pageIndex + 1
   let url = config.api_url+`/anagrafica/committenti?paginate=${paginate}&page=${encodeURIComponent(page)}&pageSize=${encodeURIComponent(pageSize)}`
-  if (filters.length > 0) {
-    url += `&filters=${encodeURIComponent(JSON.stringify(filters))}`
-  }
+
   return await response.json();
 }
 
