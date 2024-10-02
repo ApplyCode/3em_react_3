@@ -1,6 +1,5 @@
 // project imports
-import services from 'utils/mockAdapter';
-import { productReviews } from 'data/e-commerce';
+
 
 // ==============================|| MOCK SERVICES ||============================== //
 
