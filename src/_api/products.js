@@ -43,9 +43,7 @@ services.onPost('/api/products/filter').reply((config) => {
           }
         });
 
-        if (!containsQuery) {
-          searchMatches = false;
-        }
+
       }
 
       const genderMatches = filter.gender.length > 0 ? filter.gender.some((item) => item === product.gender) : true;
