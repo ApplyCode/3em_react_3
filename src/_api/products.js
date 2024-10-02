@@ -14,9 +14,7 @@ services.onPost('/api/products/filter').reply((config) => {
       products.sort((a, b) => Number(b.offerPrice) - Number(a.offerPrice));
     }
 
-    if (filter.sort === 'low') {
-      products.sort((a, b) => Number(a.offerPrice) - Number(b.offerPrice));
-    }
+
 
     if (filter.sort === 'popularity') {
       products.sort((a, b) => Number(b.popularity) - Number(a.popularity));
