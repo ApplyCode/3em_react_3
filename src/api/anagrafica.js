@@ -6,7 +6,12 @@ export async function getClienti(pageIndex, pageSize, filters, paginate=true) {
   if (filters.length > 0) {
     url += `&filters=${encodeURIComponent(JSON.stringify(filters))}`
   }
-
+  const response = await fetch(url, {
+    method: 'GET',
+    headers: new Headers({
+      'Authorization': 'Bearer '+localStorage.getItem('settings')
+    }),
+  })
   const response = await fetch(url, {
     method: 'GET',
     headers: new Headers({
