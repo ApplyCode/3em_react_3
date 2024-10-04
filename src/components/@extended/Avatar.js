@@ -15,7 +15,10 @@ function getColorStyle({ theme, color, type }) {
 
   switch (type) {
     case 'filled':
-
+      return {
+        color: contrastText,
+        backgroundColor: main
+      };
     case 'outlined':
       return {
         color: main,
