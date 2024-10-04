@@ -33,7 +33,11 @@ function getColorStyle({ theme, color, type }) {
         borderColor: light,
         backgroundColor: lighter
       };
-
+    default:
+      return {
+        color: main,
+        backgroundColor: lighter
+      };
   }
 }
 
