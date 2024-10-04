@@ -19,7 +19,13 @@ function getColorStyle({ theme, color, type }) {
         color: contrastText,
         backgroundColor: main
       };
-
+    case 'outlined':
+      return {
+        color: main,
+        border: '1px solid',
+        borderColor: main,
+        backgroundColor: 'transparent'
+      };
     case 'combined':
       return {
         color: main,
