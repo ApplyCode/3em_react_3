@@ -42,16 +42,7 @@ export const events = [
     end: sub(new Date(), { days: 4 }),
     title: 'All Day Event'
   },
-  {
-    id: '5e8882fcd525e076b3c1542c',
-    allDay: false,
-    color: EVENT_COLORS[3],
-    textColor: EVENT_COLORS[4],
-    description: 'Sorry, Stebin Ben!',
-    start: sub(new Date(), { days: 2, hours: 5, minutes: 0 }),
-    end: sub(new Date(), { days: 2, hours: 1, minutes: 30 }),
-    title: 'Opening Ceremony'
-  },
+
   {
     id: '5e8882eb5f8ec686220ff131',
     allDay: true,
