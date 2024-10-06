@@ -24,15 +24,7 @@ export const events = [
     end: sub(new Date(), { days: 12, hours: 3, minutes: 30 }),
     title: 'Repeating Event'
   },
-  {
-    id: '5e8882fcd525e076b3c1542c',
-    allDay: true,
-    color: EVENT_COLORS[2],
-    description: 'Sorry, John!',
-    start: sub(new Date(), { days: 8, hours: 0, minutes: 45 }),
-    end: sub(new Date(), { days: 8, hours: 0, minutes: 30 }),
-    title: 'Conference'
-  },
+
   {
     id: '5e8882e440f6322fa399eeb8',
     allDay: true,
