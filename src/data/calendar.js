@@ -15,15 +15,7 @@ export const EVENT_COLORS = [
 
 // calendar events
 export const events = [
-  {
-    id: '5e8882f1f0c9216397e05a9b',
-    allDay: false,
-    color: EVENT_COLORS[6],
-    description: 'SCRUM Planning',
-    start: sub(new Date(), { days: 12, hours: 5, minutes: 45 }),
-    end: sub(new Date(), { days: 12, hours: 3, minutes: 30 }),
-    title: 'Repeating Event'
-  },
+
   {
     id: '5e8882fcd525e076b3c1542c',
     allDay: true,
