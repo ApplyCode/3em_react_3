@@ -15,14 +15,7 @@ import { MuiFileInput } from 'mui-file-input';
 function EditToolbar(props) {
   const { setRows, setRowModesModel } = props;
 
-  const handleClick = () => {
-    const id = randomId();
-    setRows((oldRows) => [...oldRows, { id, name: '', isNew: true }]);
-    setRowModesModel((oldModel) => ({
-      ...oldModel,
-      [id]: { mode: GridRowModes.Edit, fieldToFocus: 'name' }
-    }));
-  };
+
 
   return (
     <GridToolbarContainer>
