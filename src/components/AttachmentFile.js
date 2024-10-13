@@ -13,7 +13,7 @@ import { Card, CardHeader } from '@mui/material';
 import { MuiFileInput } from 'mui-file-input';
 
 function EditToolbar(props) {
-  const { setRows, setRowModesModel } = props;
+
 
   const handleClick = () => {
     const id = randomId();
