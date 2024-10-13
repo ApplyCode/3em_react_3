@@ -33,8 +33,7 @@ function EditToolbar(props) {
 
 }
 export default function AttachmentFile() {
-  const [rows, setRows] = React.useState('');
-  const [rowModesModel, setRowModesModel] = React.useState({});
+
 
   const handleRowEditStop = (params, event) => {
     if (params.reason === GridRowEditStopReasons.rowFocusOut) {
