@@ -24,13 +24,7 @@ function EditToolbar(props) {
     }));
   };
 
-  return (
-    <GridToolbarContainer>
-      <Button variant="outlined" color="primary" startIcon={<AddIcon />} onClick={handleClick}>
-        Add Attachment
-      </Button>
-    </GridToolbarContainer>
-  );
+
 }
 export default function AttachmentFile() {
   const [rows, setRows] = React.useState('');
