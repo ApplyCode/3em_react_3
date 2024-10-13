@@ -23,7 +23,13 @@ function EditToolbar(props) {
       [id]: { mode: GridRowModes.Edit, fieldToFocus: 'name' }
     }));
   };
-
+  return (
+    <GridToolbarContainer>
+      <Button variant="outlined" color="primary" startIcon={<AddIcon />} onClick={handleClick}>
+        Add Attachment
+      </Button>
+    </GridToolbarContainer>
+  );
 
 }
 export default function AttachmentFile() {
