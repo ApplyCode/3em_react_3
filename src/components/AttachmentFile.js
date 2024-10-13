@@ -36,11 +36,7 @@ export default function AttachmentFile() {
   const [rows, setRows] = React.useState('');
   const [rowModesModel, setRowModesModel] = React.useState({});
 
-  const handleRowEditStop = (params, event) => {
-    if (params.reason === GridRowEditStopReasons.rowFocusOut) {
-      event.defaultMuiPrevented = true;
-    }
-  };
+
 
   const handleEditClick = (id) => () => {
     setRowModesModel({ ...rowModesModel, [id]: { mode: GridRowModes.Edit } });
