@@ -1,4 +1,8 @@
-
+// chat constant
+export const text1 = `Hi Good Morning!`;
+export const text2 = `Hey. Very Good morning. How are you?`;
+export const text3 = `Good. Thank you`;
+export const text4 = `I need your minute, are you available?`;
 
 export const text5 = `Hey man`;
 export const text6 = `Hi, Wats up?`;
