@@ -10,10 +10,7 @@ import { Card, CardContent, CardHeader, Divider, Typography } from '@mui/materia
 
 // header style
 
-const headerSX = {
-  p: 2.5,
-  '& .MuiCardHeader-action': { m: '0px auto', alignSelf: 'center' }
-};
+
 // ==============================|| CUSTOM - MAIN CARD ||============================== //
 
 const MainCard = forwardRef(
