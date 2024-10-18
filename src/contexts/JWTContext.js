@@ -23,9 +23,6 @@ const verifyToken = (serviceToken) => {
     return false;
   }
   const decoded = jwtDecode(serviceToken);
-  /**
-   * Property 'exp' does not exist on type '<T = unknown>(token: string, options?: JwtDecodeOptions | undefined) => T'.
-   */
   return decoded.exp > Date.now() / 1000;
 };
 
