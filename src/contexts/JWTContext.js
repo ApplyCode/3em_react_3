@@ -11,12 +11,7 @@ import axios from 'utils/axios';
 
 const chance = new Chance();
 
-// constant
-const initialState = {
-  isLoggedIn: false,
-  isInitialized: false,
-  user: null
-};
+
 
 const verifyToken = (serviceToken) => {
   if (!serviceToken) {
