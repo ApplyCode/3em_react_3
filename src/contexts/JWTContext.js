@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
 import { createContext, useEffect, useReducer } from 'react';
 
-
-
 // reducer - state management
 import { LOGIN, LOGOUT } from 'store/reducers/actions';
 import authReducer from 'store/reducers/auth';
