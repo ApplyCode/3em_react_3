@@ -12,9 +12,7 @@ import { randomTraderName, randomId, randomArrayItem } from '@mui/x-data-grid-ge
 import { Card, CardHeader, Checkbox, Paper } from '@mui/material';
 import { MuiFileInput } from "mui-file-input";
 
-
 function EditToolbar(props) {
-
 
   const handleClick = () => {
     const id = randomId();
