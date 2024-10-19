@@ -32,8 +32,7 @@ function EditToolbar(props) {
   );
 }
 export default function ExpenseTable() {
-  const [rows, setRows] = React.useState('');
-  const [rowModesModel, setRowModesModel] = React.useState({});
+
 
   const handleRowEditStop = (params, event) => {
     if (params.reason === GridRowEditStopReasons.rowFocusOut) {
