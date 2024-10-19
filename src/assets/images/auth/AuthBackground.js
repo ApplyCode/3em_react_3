@@ -1,6 +1,4 @@
-// material-ui
-import { useTheme } from '@mui/material/styles';
-import { Box } from '@mui/material';
+
 
 // ==============================|| AUTH BLUR BACK SVG ||============================== //
 
