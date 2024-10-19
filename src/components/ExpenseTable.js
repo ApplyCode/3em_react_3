@@ -33,7 +33,6 @@ function EditToolbar(props) {
 }
 export default function ExpenseTable() {
 
-
   const handleRowEditStop = (params, event) => {
     if (params.reason === GridRowEditStopReasons.rowFocusOut) {
       event.defaultMuiPrevented = true;
