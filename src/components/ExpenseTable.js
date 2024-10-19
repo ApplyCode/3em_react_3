@@ -78,15 +78,7 @@ export default function ExpenseTable() {
   const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
   const { setRows, setRowModesModel } = props;
   const secondColumns = [
-    {
-      field: 'name',
-      headerName: 'Clerk',
-      editable: true,
-      sortable: false,
-      width: 150,
-      type: 'singleSelect',
-      valueOptions: ['John', 'Andre', 'Tom']
-    },
+
     {
       field: 'description',
       headerName: 'Description',
