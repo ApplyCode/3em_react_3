@@ -42,7 +42,7 @@ export const AWSCognitoProvider = ({ children }) => {
   useEffect(() => {
     const init = async () => {
       try {
-        const serviceToken = window.localStorage.getItem('serviceToken');
+
         if (serviceToken) {
           setSession(serviceToken);
           dispatch({
