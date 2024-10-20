@@ -19,7 +19,10 @@ const initialState = {
   user: null
 };
 
-
+export const userPool = new CognitoUserPool({
+  UserPoolId: AWS_API.poolId || '',
+  ClientId: AWS_API.appClientId || ''
+});
 
 const setSession = (serviceToken) => {
   if (serviceToken) {
