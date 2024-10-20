@@ -8,9 +8,7 @@ import { CognitoUser, CognitoUserPool, CognitoUserAttribute, AuthenticationDetai
 import { LOGIN, LOGOUT } from 'store/reducers/actions';
 import authReducer from 'store/reducers/auth';
 
-// project imports
-import Loader from 'components/Loader';
-import { AWS_API } from 'config';
+
 
 // constant
 const initialState = {
