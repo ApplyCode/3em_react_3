@@ -37,7 +37,7 @@ const setSession = (serviceToken) => {
 const AWSCognitoContext = createContext(null);
 
 export const AWSCognitoProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(authReducer, initialState);
+
 
   useEffect(() => {
     const init = async () => {
