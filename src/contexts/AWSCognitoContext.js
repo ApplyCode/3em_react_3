@@ -12,12 +12,7 @@ import authReducer from 'store/reducers/auth';
 import Loader from 'components/Loader';
 import { AWS_API } from 'config';
 
-// constant
-const initialState = {
-  isLoggedIn: false,
-  isInitialized: false,
-  user: null
-};
+
 
 export const userPool = new CognitoUserPool({
   UserPoolId: AWS_API.poolId || '',
