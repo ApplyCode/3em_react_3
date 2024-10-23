@@ -4,7 +4,9 @@ import { createContext, useEffect, useReducer } from 'react';
 // third-party
 import { CognitoUser, CognitoUserPool, CognitoUserAttribute, AuthenticationDetails } from 'amazon-cognito-identity-js';
 
-
+// action - state management
+import { LOGIN, LOGOUT } from 'store/reducers/actions';
+import authReducer from 'store/reducers/auth';
 
 // project imports
 import Loader from 'components/Loader';
